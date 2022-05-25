@@ -1,4 +1,5 @@
 package com.plcoding.noteApp
 
-class NoteApp {
-}
+import android.app.Application
+
+class NoteApp : Application()
