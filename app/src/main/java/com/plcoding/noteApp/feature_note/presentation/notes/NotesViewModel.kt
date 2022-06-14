@@ -39,8 +39,7 @@ class NotesViewModel @Inject constructor(
                 ) {
                     return
                 }
-
-
+                getNotes(event.noteOrder)
             }
             is NotesEvent.DeleteNote -> {
                 viewModelScope.launch {
@@ -73,5 +72,4 @@ class NotesViewModel @Inject constructor(
             }
             .launchIn(viewModelScope)
     }
-
 }
